@@ -1,65 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <form action=" http://httpbin.org/post" method="post"> 
+    <header>
+        <h2>Formulário</h2>
+    </header>
+    <main>
+        <div class="container">
+            <form action=" http://httpbin.org/post" method="post">
 
-        <label for="nome"> <strong>Nome</strong> </label>
-        <input type="text" name="nome" placeholder="Digite seu nome" required>
-        <br>
-        <br>
+                <label for="nome"> <strong>Nome</strong> </label>
+                <input type="text" name="nome" placeholder="Digite seu nome" required>
+                <br>
+                <br>
 
-        <label for="idade"><strong>Idade</strong></label>
-        <input type="Number" name="idade" placeholder="Digite sua idade" min="18" max="60" required>
-        <br>
-        <br>
+                <label for="idade"><strong>Idade</strong></label>
+                <input type="Number" name="idade" placeholder="Digite sua idade" min="18" max="60" required>
+                <br>
+                <br>
 
-        <div>
-            <label for="genero"><strong>Gênero</strong></label>
-            <br>
-            <br>
+                <div>
+                    <label for="genero"><strong>Gênero</strong></label>
+                    <br>
+                    <br>
 
-            <label for="masculino"><strong>Feminino</strong></label>
-            <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino"><strong>Feminino</strong></label>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
 
-            <label for="feminino"><strong>Masculino</strong></label>
-            <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label for="feminino"><strong>Masculino</strong></label>
+                    <input type="radio" id="feminino" name="genero" value="feminino">
 
-            <label for="outros"><strong>Outros</strong></label>
-            <input type="radio" id="outros" name="genero" value="outros">
+                    <label for="outros"><strong>Outros</strong></label>
+                    <input type="radio" id="outros" name="genero" value="outros">
+                </div>
+                <br>
+                <br>
+
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" placeholder="Digite seu email" required>
+                <br>
+                <br>
+
+                <label for="senha"><strong>Senha</strong></label>
+                <input type="password" name="senha" placeholder="Digite a senha">
+                <br>
+                <br>
+
+                <label for="pais"><strong>País</strong></label>
+                <select name="pais" id="pais">
+                    <option value=""> Escolha um país </option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="Canadá">Canadá</option>
+                    <option value="Outros">Outros</option>
+                </select>
+                <br>
+                <br>
+
+                <div> <label for="comentarios"><strong>Comentários</strong></label> </div>
+                <textarea name="comentarios" id="comentarios" cols="20" rows="5"></textarea>
+            </form>
+
+            <button>Enviar</button>
         </div>
-        <br>
-        <br>
-
-        <label for="email"><strong>Email</strong></label>
-        <input type="email" name="email" placeholder="Digite seu email" required>
-        <br>
-        <br>
-
-        <label for="senha"><strong>Senha</strong></label>
-        <input type="password" name="senha" placeholder="Digite a senha">
-        <br>
-        <br>
-
-        <label for="pais"><strong>País</strong></label>
-        <select name="pais" id="pais"> 
-            <option value=""> Escolha um país </option>
-            <option value="Brasil">Brasil</option>
-            <option value="Estados Unidos">Estados Unidos</option>
-            <option value="Canadá">Canadá</option>
-            <option value="Outros">Outros</option>
-        </select>
-        <br>
-        <br>
-
-        <div> <label for="comentarios"><strong>Comentários</strong></label> </div>
-        <textarea name="comentarios" id="comentarios" cols="20" rows="5"></textarea>
-    </form>
-
-    <button>Enviar</button>
+    </main>
 </body>
+
 </html>
